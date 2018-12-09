@@ -1,6 +1,6 @@
 import BotHandler
 
-
+tocken = "741817521:AAGBN8Gke3513NXNpr6backtPuKju7QC-Jw"
 greet_bot = BotHandler(token)
 greetings = ('здравствуй', 'привет', 'ку', 'здорово')
 now = datetime.datetime.now()
