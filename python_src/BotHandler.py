@@ -3,9 +3,6 @@ from PIL import Image
 from io import BytesIO
 import json
 
-img_width, img_height = 256, 256
-input_shape = (img_width, img_height, 3)
-
 class BotHandler:
     def __init__(self, token):
         print("Create bot handler")

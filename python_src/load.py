@@ -16,13 +16,13 @@ classes = ['cardboard', 'glass', 'metal', 'paper', 'plastic']
 
     # backend Tensorflow, channels_last
 print("Загружаю сеть из файлов")
-json_file = open("../mnist_model.json", "r")
+json_file = open("../latest_model/mnist_model.json", "r")
 loaded_model_json = json_file.read()
 json_file.close()
 # Создаем модель
 loaded_model = model_from_json(loaded_model_json)
 #Загружаем сохраненные веса в модель
-loaded_model.load_weights("../mnist_model.h5")
+loaded_model.load_weights("../latest_model/mnist_model.h5")
 print("Загрузка сети завершена")
 # Компилируем загруженную модель
 loaded_model.compile(loss="categorical_crossentropy", optimizer="SGD", metrics=["accuracy"])
