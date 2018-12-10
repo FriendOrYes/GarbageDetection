@@ -1,0 +1,9 @@
+*/__pycache__/
+*.gitignore
+*.ipynb_checkpoints/
+*/.idea/
+*/Include/
+*/Lib/
+*/Scripts/
+*/tsl/
+*/venv/
